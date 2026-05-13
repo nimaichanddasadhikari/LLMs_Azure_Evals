@@ -389,9 +389,6 @@ From the v2-#2 numbers (the most complete sweep):
 - **Token-cost dashboards** (matplotlib → Plotly) for interactive exploration.
 - **Add more datasets**: BBH, IFEval, HumanEval (code), MT-Bench (judge-graded).
 - **Judge-based scoring** for `truthfulqa` and other open-ended tasks (use a stronger judge model via the same Ollama pipeline, or an API model).
-- **Cost models**: convert `tokens_per_sec` + `wall_seconds` into $-per-1k-tokens equivalents for hosted alternatives.
-- **CI run**: a tiny `DATASET_CAPS` (10 each) smoke-test that runs on every push.
-- **Phi-2 QLoRA → full evaluation loop**: feed the fine-tuned adapter through the benchmark harness via a custom Ollama Modelfile for end-to-end "tune → bench" cycles.
 
 ---
 
